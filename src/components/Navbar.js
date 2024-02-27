@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Navbar.scss";
 import Category from "../img/category-icon.png";
+import Search from "../img/search-icon.png";
 
 const Navbar = () => {
   return (
@@ -13,7 +14,10 @@ const Navbar = () => {
           </button>
         </div>
         <div className="search">
-          <input placeholder="Search" />
+          <input type="text" name="search" placeholder="Search" />
+          <button>
+            <img src={Search} alt="category" width="20px" />
+          </button>
         </div>
         <div className="language">
           <button>language</button>
