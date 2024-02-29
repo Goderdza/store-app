@@ -2,10 +2,15 @@ import React from "react";
 import "../styles/CategoryList.scss";
 
 const CategoryList = () => {
+
+  const removeSlideFunction = () => {
+    const slideElement = document.querySelector(".slider-container");
+    slideElement.classList.remove("slide-right");
+  };
   return (
     <div className="slider-container">
       <div className="exit-btn">
-        <button>X</button>
+        <button onClick={removeSlideFunction}>X</button>
       </div>
       <div className="category-list">
         <ul>
